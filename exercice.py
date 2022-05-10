@@ -1,14 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    x= " "
-    if ord(x)>=65 and ord(x)<=90:
-    x=ord(x) + 32
+    for lettre in mot:
+        x= " "
+        if ord(lettre)>=65 and ord(lettre)<=90:
+            x=ord(lettre) + 32
     return "Cette lettre en minuscule est " + chr(x)
+
 def minuscule(mot):
-    x= " "
-    if ord(x)>=97 and ord(x)<=122:
-    x=ord(x) - 32
+    for lettre in mot:
+        x= " "
+        if ord(lettre)>=97 and ord(lettre)<=122:
+            x=ord(lettre) - 32
     return "Cette lettre en majuscule est " + chr(x)
 
 
